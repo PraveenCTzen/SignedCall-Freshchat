@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+.app-body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+img{
+  max-width: 4rem;
+}
+.app-icon {
+  width: 50px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.patch-row {
+  display: grid;
+  column-gap: 2px;
+  grid-template-columns: 90%;
+  /* grid-template-rows: 4em 4em  */
+  row-gap: 15px;
+}
+
+.patch-row > input{
+  place-self: start;
+}
+.patch-app .patch-row.first {
+  grid-template-columns: 36% 53%;
+}
+
+
+.fw-widget-wrapper{
+  height: 900px;
+}
+
+.w-28 {
+  /* display: inline; */
+  width: 28%;
+}
+
+.w-70 {
+  /* diaplay: inline; */
+  width: 70%
+}
+
+
+#patch-call-button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background: #cf3654;
+  margin-top: 12px;
+  padding: 5px 26px;
+  border-radius: 7px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #cf3654;
+}
+
+.patch-app {
+  position: relative;
+}
+
+.no-access {
+  display: none;
+}
+
+.no-access.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.enable-microphone {
+  margin: 41vh auto 0 auto;
+  background-color: #cf3654;
+  color: white;
+  padding: 5px 7px;
+  /* width: 155px; */
+  cursor: pointer;
+}

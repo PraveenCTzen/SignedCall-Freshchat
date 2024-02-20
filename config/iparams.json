@@ -1,0 +1,26 @@
+{
+    "CT_accountId": {
+        "display_name": "CT Account Id",
+        "description": "Please enter the CT Account Id",
+        "type": "text",
+        "required": true
+      },
+      "region": {
+        "display_name": "Region",
+        "description": "Please enter the region",
+        "type": "text",
+        "required": true
+      },
+      "apiKey": {
+        "display_name": "API Key",
+        "description": "Please enter your api_key",
+        "type": "text",
+        "required": true
+      },
+      "SC_accountId": {
+        "display_name": "SC Account Id",
+        "description": "Please enter the SC Account Id",
+        "type": "text",
+        "required": true
+      }
+}

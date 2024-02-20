@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <script src="{{{appclient}}}"></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+  <!-- <section class="app-body">
+    <img src="styles/images/rocket.svg">
+    Congratulations on building your first app on Freshchat 🥁
+    <p id="apptext">
+    </p>
+  </section> -->
+    <div class="fw-widget-wrapper patch-app">
+      <div class="app-title">
+        <img src="./styles/images/clevertap-logo.png" class="app-icon">
+      </div>
+      <p id="apptext"></p>
+      <div class="patch-row">
+        <div class="elem">
+          <!-- <input class="patch-cc w-28" placeholder="Country Code eg. 91" required value="91"> -->
+          <input class="patch-cuid w-70" placeholder="Enter Cuid">
+        </div>
+        <input class="patch-context w-70" placeholder="Enter Context">
+      </div>
+      <button id="patch-call-button">Call</button>
+      <div class="no-access">
+        <div class="microphone">
+          <div class="enable-microphone">
+            <p>Please grant microphone access to use Patch Dialer and refresh the page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="scripts/app.js"></script>
+<!-- <script src="scripts/clevertap-signedcall.umd.js"></script> -->
+<script src="https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap-signedcall.umd.js"></script>
+</html>
